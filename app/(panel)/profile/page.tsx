@@ -109,7 +109,7 @@ export default function ProfilePage() {
         if (token) {
           headers["Authorization"] = `Bearer ${token}`;
         }
-        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000"}/api/admin/profile`, {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL ?? "https://mechanicsbackend.onrender.com"}/api/admin/profile`, {
           headers,
         });
         if (!response.ok) {
@@ -146,7 +146,7 @@ export default function ProfilePage() {
       if (token) {
         headers["Authorization"] = `Bearer ${token}`;
       }
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000"}/auth/me`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL ?? "https://mechanicsbackend.onrender.com"}/auth/me`, {
         method: "PATCH",
         headers,
         body: JSON.stringify({
@@ -183,7 +183,7 @@ export default function ProfilePage() {
       if (token) {
         headers["Authorization"] = `Bearer ${token}`;
       }
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000"}/auth/change-password`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL ?? "https://mechanicsbackend.onrender.com"}/auth/change-password`, {
         method: "POST",
         headers,
         body: JSON.stringify({
@@ -230,7 +230,7 @@ export default function ProfilePage() {
       if (token) {
         headers["Authorization"] = `Bearer ${token}`;
       }
-      await fetch(`${process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000"}/auth/logout`, {
+      await fetch(`${process.env.NEXT_PUBLIC_API_URL ?? "https://mechanicsbackend.onrender.com"}/auth/logout`, {
         method: "POST",
         headers,
         body: JSON.stringify({ refreshToken }),

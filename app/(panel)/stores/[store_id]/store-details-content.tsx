@@ -107,7 +107,7 @@ export function StoreDetailsContent({ detail }: { detail: StoreDetail }) {
     setDocViewName(fileName);
     setDocViewOpen(true);
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000"}/api/admin/documents/${docId}/view`);
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL ?? "https://mechanicsbackend.onrender.com"}/api/admin/documents/${docId}/view`);
       if (!res.ok) {
         const errText = await res.text().catch(() => "");
         throw new Error(`HTTP ${res.status}: ${errText}`);
