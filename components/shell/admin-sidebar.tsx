@@ -79,7 +79,7 @@ export function AdminSidebar({ ...props }: React.ComponentProps<typeof Sidebar>)
             <Boxes className="size-4" strokeWidth={2} aria-hidden="true" />
           </span>
           <div className="grid leading-none">
-            <span className="text-sm font-semibold">Mechanics</span>
+            <span className="text-sm font-semibold">Avero</span>
             <span className="text-xs text-muted-foreground">
               {t({ ar: "لوحة الإدارة", en: "Admin Panel" })}
             </span>

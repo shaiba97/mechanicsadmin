@@ -23,7 +23,7 @@ const plexArabic = IBM_Plex_Sans_Arabic({
 });
 
 export const metadata: Metadata = {
-  title: "Mechanics — لوحة التحكم | Admin Dashboard",
+  title: "أفيرو — لوحة التحكم | Admin Dashboard",
   description:
     "Automotive spare parts marketplace control panel for KSA. لوحة تحكم سوق قطع غيار السيارات في السعودية.",
 };
