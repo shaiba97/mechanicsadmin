@@ -15,6 +15,7 @@ import {
   Wallet,
   type LucideIcon,
 } from "lucide-react";
+import { AveroLogo } from "@/components/avero-logo";
 import type { Bilingual } from "@/lib/i18n";
 import { useLocale } from "@/hooks/use-locale";
 import {
@@ -75,11 +76,9 @@ export function AdminSidebar({ ...props }: React.ComponentProps<typeof Sidebar>)
     >
       <SidebarHeader>
         <div className="flex items-center gap-2 px-2 py-1.5">
-          <span className="flex size-7 items-center justify-center rounded-md bg-foreground text-primary-foreground">
-            <Boxes className="size-4" strokeWidth={2} aria-hidden="true" />
-          </span>
+          <AveroLogo variant="mark" size="sm" inverted className="size-7" />
           <div className="grid leading-none">
-            <span className="text-sm font-semibold">Avero</span>
+            <AveroLogo variant="wordmark" size="sm" locale={locale} inverted />
             <span className="text-xs text-muted-foreground">
               {t({ ar: "لوحة الإدارة", en: "Admin Panel" })}
             </span>
